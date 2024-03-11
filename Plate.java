@@ -1,4 +1,4 @@
-public public class Plate {
+public class Plate {
     private int food;
     public Plate(int food) {
         this.food = food;
@@ -6,6 +6,10 @@ public public class Plate {
     public void info() {
         System.out.println("plate: " + food);
     }
-} Plate {
-    
+    public void setFood(int food) {
+        this.food = food;
+    }
+    public int getFood() {
+        return food;
+    }
 }
