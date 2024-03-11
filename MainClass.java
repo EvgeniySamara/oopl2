@@ -3,7 +3,10 @@ public class MainClass {
         Cat cat = new Cat("Barsik", 5);
         Plate plate = new Plate(100);
         plate.info();
-        cat.eat();
-        plate.setFood(plate.getFood() - cat.getAppetite());
+        cat.eat(plate);
+        plate.info();
+        System.out.println(cat.getHungry());
+        
+   
     }
 }
