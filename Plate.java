@@ -4,10 +4,11 @@ public class Plate {
         this.food = food;
     }
     public void info() {
-        System.out.println("plate: " + food);
+        System.out.println("Еды в тарелке: " + food);
     }
     public void setFood(int food) {
-        this.food = food;
+        if (food>=0) this.food = food;
+        else System.out.println("Недостаточно еды");
     }
     public int getFood() {
         return food;
